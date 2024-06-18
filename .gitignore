@@ -1,0 +1,12 @@
+# Copyright 2024 pyclinsci authors. See license.md file for details.
+# GIT ignored files
+
+# Poetry temporary files
+.*_cache
+__pycache__
+.install.stamp
+
+# Sphinx compilation files
+
+# MacOS files
+.DS_Store

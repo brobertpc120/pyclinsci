@@ -1,0 +1,73 @@
+# Copyright 2024 pyclinsci authors. See license.md file for details.
+
+[tool.poetry]
+name = "pyclinsci"
+version = "0.0.1"
+description = "A Python package which gathers tools to support Clinical Science projects."
+authors = [
+    "Benjamin Robert <brobert.pc120@gmail.com>"
+]
+license = "MIT"
+readme = "readme.md"
+# homepage = ""
+repository = "https://github.com/brobertpc120/pyclinsci"
+# documentation = ""
+keywords = ["science", "clinical"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: MacOS X",
+    "Framework :: IPython",
+    "Framework :: Jupyter",
+    "Framework :: Pytest",
+    "Framework :: Sphinx",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+loguru = "^0.7.2"
+pandas = "^2.2.2"
+pytest = "^8.2.2"
+ruff = "^0.4.9"
+sphinx = "^7.3.7"
+sphinx-autoapi = "^3.1.1"
+furo = "^2024.5.6"
+recommonmark = "^0.7.1"
+numpy = "^2.0.0"
+matplotlib = "^3.9.0"
+pillow = "^10.3.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length    = 79
+indent-width   = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+select             = ["ALL"]
+ignore             = ["D203", "D213"]
+fixable            = ["ALL"]
+unfixable          = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style                = "double"
+indent-style               = "space"
+skip-magic-trailing-comma  = false
+line-ending                = "auto"
+docstring-code-format      = false
+docstring-code-line-length = "dynamic"

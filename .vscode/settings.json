@@ -1,0 +1,38 @@
+// Copyright 2024 pyclinsci authors. See license.md file for details.
+
+{
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "cSpell.words": [
+        "autoapi",
+        "autosummary",
+        "docstrings",
+        "doctests",
+        "furo",
+        "graphviz",
+        "groupwise",
+        "ipython",
+        "loguru",
+        "matplotlib",
+        "numfig",
+        "numpy",
+        "pagerefs",
+        "pdflatex",
+        "pyclinsci",
+        "pycodestyle",
+        "pyflakes",
+        "pytest",
+        "secnum",
+        "setuptools",
+        "sourcelink",
+        "toctree",
+        "traceback",
+        "undoc",
+        "viewcode",
+        "xmode"
+    ]
+}
