@@ -1,6 +1,6 @@
 # Copyright 2024 pyclinsci authors. See license.md file for details.
 
-# Import objects
+# Import libraries and objects
 from importlib.metadata import version
 from importlib.util import find_spec
 from pathlib import Path
@@ -27,17 +27,23 @@ result = cast(Match[str], match(r"(\d+\.\d+\.\d+).*", __version__))
 __version_info__: tuple[str] = tuple(result.group(1).split("."))
 """Version information of the module"""
 
-def config_logging(console: str = "NONE", file: str = "NONE") -> None:
+def config_logging(
+    console: str = "NONE",
+    file: str = "NONE",
+) -> logger:
     """Configure logging settings for the application.
 
-    This function resets the logging handlers and configures logging to
-    a rotating file named 'loguru.log' with a rotation interval of 5
-    seconds. It also configures logging to the standard error stream
-    (stderr) for console output.
+    Parameters
+    ----------
+    console : str
+        The logging level for console output. Default is "NONE".
+    file : str
+        The logging level for file output. Default is "NONE".
 
     Returns
     -------
-        None
+    loguru.logger
+        The configured logger instance.
 
     """
     # Reset logging handlers
@@ -61,3 +67,6 @@ def config_logging(console: str = "NONE", file: str = "NONE") -> None:
             format="{time:MMMM D, YYYY > HH:mm:ss!UTC} | {level}\n{message}\n",
         )
         logger.info("Configured logging in console.")
+
+    # Return logger handler
+    return logger

@@ -2,14 +2,14 @@
 
 {
     "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.testing.pytestArgs": [
-        "."
-    ],
+    "python.testing.pytestArgs": ["."],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "cSpell.words": [
         "autoapi",
         "autosummary",
+        "choropleth",
+        "coloraxis",
         "docstrings",
         "doctests",
         "furo",
@@ -28,6 +28,7 @@
         "pytest",
         "secnum",
         "setuptools",
+        "showscale",
         "sourcelink",
         "toctree",
         "traceback",

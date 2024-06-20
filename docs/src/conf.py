@@ -15,7 +15,7 @@ sys.path.insert(0, Path("..").resolve())
 # -- Project information -----------------------------------------------------
 
 project   = "pyclinsci"
-author    = "Benjamin Robert and other contributors"
+author    = "Contributors of pyclinsci"
 version   = ".".join(str(x) for x in pyclinsci.__version_info__[:2])
 release   = pyclinsci.__version__
 
@@ -46,6 +46,11 @@ exclude_patterns = [
 
 numfig              = True
 numfig_secnum_depth = 1
+
+
+# -- Options for Graphviz output ----------------------------------------------
+
+graphviz_output_format = "svg"
 
 
 # -- Options for HTML output --------------------------------------------------
@@ -79,7 +84,7 @@ autoapi_options = [
     "undoc-members",            # display objects with no docstring
     "special-members",          # display special objects (__foo__)
     "show-inheritance",         # display a list of base classes
-    "show-inheritance-diagram", # display an inheritance diagram
+    # "show-inheritance-diagram", # display an inheritance diagram
     "show-module-summary",      # include autosummary directives
     "imported-members",         # display objects from same package or module
 ]
