@@ -557,23 +557,6 @@ unicode = ["unicodedata2 (>=15.1.0)"]
 woff = ["brotli (>=1.0.1)", "brotlicffi (>=0.8.0)", "zopfli (>=0.1.4)"]
 
 [[package]]
-name = "furo"
-version = "2024.5.6"
-description = "A clean customisable Sphinx documentation theme."
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "furo-2024.5.6-py3-none-any.whl", hash = "sha256:490a00d08c0a37ecc90de03ae9227e8eb5d6f7f750edf9807f398a2bdf2358de"},
-    {file = "furo-2024.5.6.tar.gz", hash = "sha256:81f205a6605ebccbb883350432b4831c0196dd3d1bc92f61e1f459045b3d2b0b"},
-]
-
-[package.dependencies]
-beautifulsoup4 = "*"
-pygments = ">=2.7"
-sphinx = ">=6.0,<8.0"
-sphinx-basic-ng = ">=1.0.0.beta2"
-
-[[package]]
 name = "idna"
 version = "3.7"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -2066,21 +2049,19 @@ sphinx = ">=6.1.0"
 docs = ["furo", "sphinx", "sphinx-design"]
 
 [[package]]
-name = "sphinx-basic-ng"
-version = "1.0.0b2"
-description = "A modern skeleton for Sphinx themes."
+name = "sphinxawesome-theme"
+version = "5.2.0"
+description = "An awesome theme for the Sphinx documentation generator"
 optional = false
-python-versions = ">=3.7"
+python-versions = "<4.0,>=3.8"
 files = [
-    {file = "sphinx_basic_ng-1.0.0b2-py3-none-any.whl", hash = "sha256:eb09aedbabfb650607e9b4b68c9d240b90b1e1be221d6ad71d61c52e29f7932b"},
-    {file = "sphinx_basic_ng-1.0.0b2.tar.gz", hash = "sha256:9ec55a47c90c8c002b5960c57492ec3021f5193cb26cebc2dc4ea226848651c9"},
+    {file = "sphinxawesome_theme-5.2.0-py3-none-any.whl", hash = "sha256:56f1462f4ec4a5d66017819de6b7965a394d4157117bf12f029e7818d6789525"},
+    {file = "sphinxawesome_theme-5.2.0.tar.gz", hash = "sha256:c24f1e5c0b9e475380d16fc5f1f3bfd84955817da0905d95f7e20809d7cd3c5d"},
 ]
 
 [package.dependencies]
-sphinx = ">=4.0"
-
-[package.extras]
-docs = ["furo", "ipython", "myst-parser", "sphinx-copybutton", "sphinx-inline-tabs"]
+beautifulsoup4 = ">=4.9.1,<5.0.0"
+sphinx = {version = ">=7.2,<7.4", markers = "python_version >= \"3.9\" and python_version < \"3.13\""}
 
 [[package]]
 name = "sphinxcontrib-applehelp"
@@ -2301,4 +2282,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "639e2979baf23849a1ecca656938647d035163e9bd113449bd9038bc83068dc8"
+content-hash = "8db3f421c5a5e5117cd956cf2f684599eb819d699c845a302f27b66d7a816fc2"

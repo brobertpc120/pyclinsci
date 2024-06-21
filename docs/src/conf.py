@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 import pyclinsci
+from sphinxawesome_theme.postprocess import Icons
 
 sys.path.insert(0, Path("..").resolve())
 
@@ -19,76 +20,66 @@ author    = "Contributors of pyclinsci"
 version   = ".".join(str(x) for x in pyclinsci.__version_info__[:2])
 release   = pyclinsci.__version__
 
-
-# -- General configuration ---------------------------------------------------
-
-extensions = [
-    "autoapi.extension",
-    "sphinx.ext.autodoc",
-    "sphinx.ext.autosummary",
-    "sphinx.ext.graphviz",
-    "sphinx.ext.inheritance_diagram",
-    "sphinx.ext.viewcode",
-    "sphinx.ext.napoleon",
-]
-
 source_suffix = {
     ".rst": "restructuredtext",
     ".md": "markdown",
 }
 
-exclude_patterns = [
-    "build",
-    "Thumbs.db",
-    ".DS_Store",
-    "changes/*.rst",
-]
+# exclude_patterns = [
+#     "build",
+#     "Thumbs.db",
+#     ".DS_Store",
+#     "changes/*.rst",
+# ]
 
-numfig              = True
-numfig_secnum_depth = 1
-
-
-# -- Options for Graphviz output ----------------------------------------------
-
-graphviz_output_format = "svg"
-
-
-# -- Options for HTML output --------------------------------------------------
-
-html_theme           = "furo"
-html_show_sourcelink = True
-
-
-# -- Options for LATEX output -------------------------------------------------
-
-latex_engine        = "pdflatex"
-latex_show_pagerefs = True
-
-
-# -- Options for PYTHON output ------------------------------------------------
+# -- General configuration ---------------------------------------------------
 
 python_display_short_literal_types = True
 
+extensions = [
+    "autoapi.extension",
+    "sphinx.ext.napoleon",
+    # "sphinx.ext.graphviz",
+    # "sphinx.ext.inheritance_diagram",
+    "sphinx.ext.viewcode",
+]
 
 # -- Options for AUTOAPI extension --------------------------------------------
 
 autoapi_dirs                 = ["../../src/pyclinsci"]
-autoapi_type                 = "python"
+autoapi_member_order         = "groupwise"
+autoapi_own_page_level       = "class"
 autoapi_file_patterns        = ["*.py"]
-autoapi_generate_api_docs    = True
-autoapi_keep_files           = False
 
 autoapi_options = [
     "members",                  # display children
     "inherited-members",        # display inherited children
     "undoc-members",            # display objects with no docstring
-    "special-members",          # display special objects (__foo__)
     "show-inheritance",         # display a list of base classes
     # "show-inheritance-diagram", # display an inheritance diagram
     "show-module-summary",      # include autosummary directives
     "imported-members",         # display objects from same package or module
 ]
 
-autoapi_add_toctree_entry    = True
-autoapi_python_class_content = "both" # "class"
-autoapi_member_order         = "groupwise"
+# -- Options for NAPOLEON extension -------------------------------------------
+
+napoleon_google_docstring              = True
+napoleon_numpy_docstring               = False
+
+# -- Options for Graphviz output ----------------------------------------------
+
+# graphviz_output_format = "svg"
+
+
+# -- Options for HTML output --------------------------------------------------
+
+html_theme           = "sphinxawesome_theme"
+html_permalinks_icon = Icons.permalinks_icon
+html_show_sourcelink = True
+html_theme_options = {
+}
+
+# -- Options for LATEX output -------------------------------------------------
+
+latex_engine        = "pdflatex"
+latex_show_pagerefs = True

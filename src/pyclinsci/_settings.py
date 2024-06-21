@@ -33,17 +33,12 @@ def config_logging(
 ) -> logger:
     """Configure logging settings for the application.
 
-    Parameters
-    ----------
-    console : str
-        The logging level for console output. Default is "NONE".
-    file : str
-        The logging level for file output. Default is "NONE".
+    Parameters:
+        console (str): The logging level for console output. Default is "NONE".
+        file (str): The logging level for file output. Default is "NONE".
 
-    Returns
-    -------
-    loguru.logger
-        The configured logger instance.
+    Returns:
+        loguru.logger: The configured logger instance.
 
     """
     # Reset logging handlers

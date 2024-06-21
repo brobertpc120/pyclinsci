@@ -9,16 +9,12 @@ from loguru import logger
 def method_exec_dur(func: Callable[..., Any]) -> Callable[..., Any]:
     """Log the execution duration of a method.
 
-    Parameters
-    ----------
-    func : Callable[..., Any])
-        The method to be decorated.
+    Parameters:
+        func (Callable[..., Any])): The method to be decorated.
 
-    Returns
-    -------
-    Callable[..., Any]
-        The wrapped function that logs the execution duration of the input
-        method.
+    Returns:
+        Callable[..., Any]: The wrapped function that logs the execution
+            duration of the input method.
 
     """
     # Define wrapper function

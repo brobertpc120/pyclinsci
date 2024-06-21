@@ -15,29 +15,20 @@ def dialog_select_file_dir(
 ) -> str:
     """Open a dialog box to select a file or directory using PyQt6 QtWidgets.
 
-    Parameters
-    ----------
-    dir_path : str
-        The initial directory path to start the dialog box. Defaults to
-        the current working directory.
-    func : str
-        The function to perform - "open" to open a file, "save" to save
-        a file, or "dir" to select a directory.
-    opt : dict[str,str]
-        Optional parameter to specify file types to filter. Defaults to
-        {"*.*": "All files"}.
+    Parameters:
+        dir_path (str, default=Path.cwd()): The initial directory path to
+            start the dialog box.
+        func (str, default="open"): The function to perform - "open" to open a
+            file, "save" to save a file, or "dir" to select a directory.
+        opt (dict[str,str], default={"*.*": "All files"}): Optional parameter
+            to specify file types to filter.
 
-    Returns
-    -------
-    str
-        The selected file path or directory path.
+    Returns:
+        str: The selected file path or directory path.
 
-    Raises
-    ------
-    FileNotFoundError
-        If the provided directory path is not valid.
-    ValueError
-        If the function parameter 'func' is not valid.
+    Raises:
+        FileNotFoundError: If the provided directory path is not valid.
+        ValueError: If the function parameter 'func' is not valid.
 
     """
     # Test if path is a directory
