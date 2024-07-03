@@ -18,6 +18,7 @@
         "locationmode",
         "loguru",
         "matplotlib",
+        "maxdepth",
         "numfig",
         "numpy",
         "pagerefs",

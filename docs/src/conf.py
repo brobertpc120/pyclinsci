@@ -25,24 +25,30 @@ source_suffix = {
     ".md": "markdown",
 }
 
-# exclude_patterns = [
-#     "build",
-#     "Thumbs.db",
-#     ".DS_Store",
-#     "changes/*.rst",
-# ]
+exclude_patterns = [
+    "build",
+    "Thumbs.db",
+    ".DS_Store",
+    "changes/*.rst",
+]
 
 # -- General configuration ---------------------------------------------------
 
 python_display_short_literal_types = True
 
 extensions = [
+    "myst_parser",
     "autoapi.extension",
     "sphinx.ext.napoleon",
     # "sphinx.ext.graphviz",
     # "sphinx.ext.inheritance_diagram",
     "sphinx.ext.viewcode",
 ]
+
+# -- Options for MYST_PARSER extension ----------------------------------------
+
+myst_heading_anchors = 2
+# myst_all_links_external = True
 
 # -- Options for AUTOAPI extension --------------------------------------------
 

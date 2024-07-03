@@ -7,18 +7,6 @@ activities. Beyond gathering different tools, the objective of this module is
 to provide different method or classes to simplify development of new tools and
 accelerate development of these tools.
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation](#installation)
-  - [Install released version](#install-released-version)
-  - [Install development version](#install-development-version)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-
-<!-- /code_chunk_output -->
-
 ## Installation
 
 ### Install released version
