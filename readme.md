@@ -1,11 +1,24 @@
 <!-- Copyright 2024 pyclinsci authors. See license.md file for details. -->
 
-# *pyclinsci*
+# `pyclinsci`
 
 *pyclinsci* is a Python package gathering tools for clinical science
 activities. Beyond gathering different tools, the objective of this module is
 to provide different method or classes to simplify development of new tools and
 accelerate development of these tools.
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [`pyclinsci`](#pyclinsci)
+  - [Installation](#installation)
+    - [Install released version](#install-released-version)
+    - [Install development version](#install-development-version)
+  - [Documentation](#documentation)
+  - [Contributing](#contributing)
+
+<!-- /code_chunk_output -->
 
 ## Installation
 

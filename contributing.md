@@ -1,6 +1,6 @@
 <!-- Copyright 2024 pyclinsci authors. See license.md file for details. -->
 
-# Contributing to *pyclinsci*
+# Contributing
 
 This is the guide for contributing code, documentation and tests, and for
 filing issues. Please read it carefully to help make the code review process go
@@ -11,7 +11,7 @@ merged.
 
 <!-- code_chunk_output -->
 
-- [Contributing to *pyclinsci*](#contributing-to-pyclinsci)
+- [Contributing](#contributing)
   - [How to contribute](#how-to-contribute)
   - [Pull Request Checklist](#pull-request-checklist)
   - [Filing bugs](#filing-bugs)
@@ -177,7 +177,7 @@ following rules before submitting:
 We are glad to accept any sort of documentation: function docstrings,
 reStructuredText documents, tutorials, etc.
 reStructuredText documents live in the source code repository under the
-``doc/`` directory.
+``docs/`` directory.
 
 You can edit the documentation using any text editor and then generate
 the HTML output by typing `make doc-html` from the root directory.

@@ -2,7 +2,7 @@
 
 [tool.poetry]
 name = "pyclinsci"
-version = "0.0.4"
+version = "0.0.5"
 description = "A Python package which gathers tools to support Clinical Science projects."
 authors = [
     "Benjamin Robert <brobert.pc120@gmail.com>"
