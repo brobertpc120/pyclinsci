@@ -7,6 +7,7 @@ __pycache__
 .install.stamp
 
 # Sphinx compilation files
+docs/html
 
 # MacOS files
 .DS_Store

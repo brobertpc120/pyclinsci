@@ -2,7 +2,6 @@
 """Test settings from pyclinsci package."""
 
 # Import modules, functions, constants
-from loguru import logger
 from pyclinsci import (
     MODULE_PATH,
     __version__,
@@ -11,7 +10,7 @@ from pyclinsci import (
 )
 
 # Initialize logging in this file
-config_logging(console="TRACE")
+logger = config_logging(console="TRACE")
 
 # Access to package description variables
 def test_package_version() -> None:
